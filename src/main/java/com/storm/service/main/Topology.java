@@ -22,6 +22,7 @@ public class Topology {
     public static void main(String[] args) {
         //定义一个拓扑
         TopologyBuilder builder = new TopologyBuilder();
+       // DRPCSpout spout = new DRPCSpout("exclamation");
         //设置一个Executeor(线程)，默认一个
         builder.setSpout(test_spout, new SpoutTest(), 1);
         //shuffleGrouping:表示是随机分组
